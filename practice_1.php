@@ -7,7 +7,7 @@
   // 7 * 2をechoしてください
   echo 7 * 2;
  ?>
-  
+
 <?php
   // 8 % 3をechoしてください
   echo 8 % 3;
@@ -98,9 +98,9 @@
 ?>
 
 <?php
-  
+
   $x = 1071;
-  
+
   // 以下にif-elseif-else文を書いてください
   if ($x % 3 == 0 && $x % 7 == 0) {
     echo 'xは3の倍数かつ7の倍数です。';
@@ -152,7 +152,7 @@
     '英語' => '90',
     '国語' => '80'
     );
-    
+
   //$scoresの'国語'に5を足してください。
   $scores['国語'] += 5;
   echo $scores['国語'];
@@ -169,7 +169,7 @@
 <?php
   // 変数$iを定義してください
   $i = 2;
-  
+
   // while文を書いてください
   while ($i <= 100) {
     if ($i % 2 == 0) {
@@ -217,19 +217,19 @@
 
   // strlenを用いて$strの長さをechoしてください
   echo strlen($str);
-  
+
   echo '<br>';
-  
+
   $array = array('HTML', 'CSS', 'PHP');
 
   // countを用いて$arrayの要素数をechoしてください
   echo count($array);
-  
+
   echo '<br>';
-  
+
   // randを用いて10から15までのランダムな数字をechoしてください
   echo rand(10, 15);
-  
+
 ?>
 
 <?php
@@ -238,19 +238,19 @@
   function hello() {
     echo 'Hello, world!';
   }
-  
+
   // 関数helloを呼び出してください
   hello();
-  
+
   echo '<br>';
   // 関数printRectangleAreaを定義してください
   function printRectangleArea($height, $width) {
     echo $height * $width;
   }
-  
+
   // 引数を(5, 10)としてprintRectangleAreaを呼び出してください
   printRectangleArea(5, 10);
-  
+
 ?>
 
 <?php
@@ -259,13 +259,13 @@
   function getCircleArea($radius) {
     return $radius * $radius * 3;
   }
-  
+
   // 関数getCircleAreaを呼び出して、戻り値を変数$circleAreaに代入してください
   $circleArea = getCircleArea(5);
-  
+
   // $circleAreaをechoしてください
   echo $circleArea;
-  
+
 ?>
 
 <!-- この下にformタグを書いていきましょう -->
@@ -290,5 +290,25 @@
   <option value="30代">30代</option>
 </select>
 
-<!-- ageを受け取りechoしましょう --> 
+<!-- ageを受け取りechoしましょう -->
 <?php echo $_POST['age']; ?>
+
+<!-- for文を用いて6歳から100歳までをoptionで選べるようにしましょう -->
+<?php
+  for ($i = 6;$i<=100; $i++){
+    echo "<option value='{$i}'>{$i}</option>";
+  }
+?>
+
+<!-- この下にselectタグを書いていきましょう -->
+<select name="category">
+  <option value="未選択">選択してください</option>
+  <?php
+    foreach($types as $type) {
+      echo "<option value='{$type}'>{$type}</option>";
+    }
+  ?>
+</select>
+
+<!-- この下でcategoryを受け取りechoしましょう -->
+<?php echo $_POST['category']; ?>
