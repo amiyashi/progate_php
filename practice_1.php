@@ -267,3 +267,6 @@
   echo $circleArea;
   
 ?>
+
+<!-- この下にformタグを書いていきましょう -->
+<form action="sent.php" method="post"></form>
