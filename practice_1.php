@@ -282,3 +282,13 @@
 
 <!-- bodyを受け取りechoしましょう -->
 <?php echo $_POST['body']; ?>
+
+<!-- この下にselectタグを書いていきましょう -->
+<select name="age">
+  <option value="未選択">選択してください</option>
+  <option value="20代">20代</option>
+  <option value="30代">30代</option>
+</select>
+
+<!-- ageを受け取りechoしましょう --> 
+<?php echo $_POST['age']; ?>
