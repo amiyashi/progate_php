@@ -270,3 +270,9 @@
 
 <!-- この下にformタグを書いていきましょう -->
 <form action="sent.php" method="post"></form>
+
+<!-- この下にinputタグを書いていきましょう -->
+<input type="text" name="name">
+
+<!-- この下にtextareaタグを書いていきましょう -->
+<textarea name="body"></textarea>
