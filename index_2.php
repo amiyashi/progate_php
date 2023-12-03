@@ -41,7 +41,7 @@
   $y = 2;
   $a = 8;
   $b = 4;
-    
+
 ?>
 
 <!-- この下で$xの計算をしていきましょう -->
@@ -153,7 +153,7 @@
     );
   $scores['国語'] += 5;
   echo $scores['国語'];
-  
+
 ?>
 
 <?php
@@ -211,16 +211,16 @@
   $str = 'progate';
   // strlenを用いて$strの長さをechoしてください
   echo strlen($str);
-  
+
   echo '<br>';
-  
+
   $array = array('HTML', 'CSS', 'PHP');
 
   // countを用いて$arrayの要素数をechoしてください
   echo count($array);
-  
+
   echo '<br>';
-  
+
   // randを用いて10から15までのランダムな数字をechoしてください
   echo rand(10, 15);
 ?>
@@ -230,16 +230,28 @@
   function hello() {
     echo 'Hello, world!';
   }
-  
+
   // 関数helloを呼び出してください
   hello();
-  
+
   echo '<br>';
   // 関数printRectangleAreaを定義してください
   function printRectangleArea($height, $width) {
     echo $height * $width;
   }
-  
+
   // 引数を(5, 10)としてprintRectangleAreaを呼び出してください
   printRectangleArea(5, 10);
+?>
+
+<?php
+  // 関数getCircleAreaを定義してください
+  function getCircleArea($radius) {
+    return $radius * $radius * 3;
+  }
+
+  // 関数getCircleAreaを呼び出して、戻り値を変数$circleAreaに代入してください
+  $circleArea = getCircleArea(5);
+  // $circleAreaをechoしてください
+  echo $circleArea;
 ?>
