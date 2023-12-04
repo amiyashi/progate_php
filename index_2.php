@@ -264,3 +264,6 @@
 <div class="form-item">内容</div>
 <!-- この下にtextareaタグを書いていきましょう -->
 <textarea name="body"></textarea>
+
+<!-- この下に送信ボタンを作りましょう -->
+<input type="submit" value="送信">
