@@ -54,6 +54,33 @@
   // $circleAreaをechoしてください
   echo $circleArea;
   
+  // for文を用いて6歳から100歳までをoptionで選べるようにしましょう
+  for ($i = 6; $i <= 100; $i++) {
+    echo "<option value='{$i}'>{$i}</option>";
+  }
   
+  $types = array('Progateに関するお問い合わせ', 'Progateに対する意見', '採用に関するお問い合わせ', '取材・メディア関連のお問い合わせ', '料金に関するお問い合わせ', 'その他');
+  // この下にselectタグを書いていきましょう
+  <select name="category">
+  <option value="未選択">選択してください</option>
+  foreach ($types as $type) {
+    echo "<option value='{$type}'>{$type}</option>";
+  }
+  
+  // 変数$iを定義してください
+  $i = 2;
+  
+  // while文を書いてください
+  while ($i <= 100) {
+    if ($i % 2 == 0) {
+      echo $i;
+      echo '<br>'; 
+    }
+    $i++;
+  }
+  
+  for ($i = 6; $i <= 100; $i++) {
+    echo "<option value='{$i}'>{$i}</option>";
+  }
   
 ?>
