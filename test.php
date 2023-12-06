@@ -116,3 +116,20 @@
 
 <!-- bodyを受け取りechoしましょう -->
 <?php echo $_POST['body']; ?>
+
+<!-- for文を用いて6歳から100歳までをoptionで選べるようにしましょう -->
+<?php 
+  for ($i = 6; $i <= 100; $i++) {
+    echo "<option value='{$i}'>{$i}</option>";
+  }
+?>
+
+<!-- この下にselectタグを書いていきましょう -->
+<select name="category">
+  <option value="未選択">選択してください</option>
+  <?php 
+    foreach ($types as $type) {
+      echo "<option value='{$type}'>{$type}</option>";
+    }
+  ?>
+</select>
