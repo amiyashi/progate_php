@@ -1,4 +1,10 @@
 <?php
+  echo 'Hello, PHP';
+  echo '<br>';
+  echo '10 + 7';
+  
+  echo 'My name is '.$name;
+  
   // FizzBuzz
   for ($i= 1; $i <= 100; $i++) {
   if ($i % 3 == 0 && $i % 5 == 0) {
