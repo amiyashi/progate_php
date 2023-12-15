@@ -5,6 +5,9 @@
   
   echo 'My name is '.$name;
   
+  $taxIncludedPrice = $price + $price * $taxRate;
+  echo '税込価格は'.$taxIncludedPrice.'円です';
+  
   // FizzBuzz
   for ($i= 1; $i <= 100; $i++) {
   if ($i % 3 == 0 && $i % 5 == 0) {
