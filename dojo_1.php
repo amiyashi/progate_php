@@ -74,4 +74,13 @@ echo '合計金額は'.$totalPrice.'円です';
 echo '<br>';
 echo $maxPriceMenuName.'が最高価格で'.$maxPrice.'円です';
 
+$taxIncludedPrice = $price + $price * $taxRate;
+if ($money > $taxIncludedPrice) {
+  echo '商品を買うことができます';
+} elseif ($money == $taxIncludedPrice) {
+  echo '商品を買うことができますが、所持金がなくなります';
+} else {
+  echo '商品を買うことができません';
+}
+
 ?>
