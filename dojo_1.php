@@ -96,4 +96,10 @@ for ($i = 1; $i <= 100; $i++) {
   echo '<br>';
 }
 
+$totalPrice = 0;
+foreach($prices as $price) {
+  $totalPrice += $price;
+}
+echo '合計金額は'.$totalPrice.'円です';
+
 ?>
