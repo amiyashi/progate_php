@@ -97,9 +97,15 @@ for ($i = 1; $i <= 100; $i++) {
 }
 
 $totalPrice = 0;
+$maxPrice = 0;
 foreach($prices as $price) {
   $totalPrice += $price;
+  if ($price > $maxPrice) {
+    $maxPrice = $price;
+  }
 }
 echo '合計金額は'.$totalPrice.'円です';
+echo '<br>';
+echo '最高価格は'.$maxPrice.'円です';
 
 ?>
