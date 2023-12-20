@@ -116,4 +116,13 @@ foreach ($menus as $menu) {
   echo '<br>';
 }
 
+$totalPrice = 0;
+foreach ($menus as $menu) {
+  $price = $menu['price'];
+  echo $menu['name'].'は'.$price.'円です';
+  echo '<br>';
+  $totalPrice += $price; 
+}
+echo '合計金額は'.$totalPrice.'円です';
+
 ?>
