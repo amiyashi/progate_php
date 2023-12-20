@@ -111,4 +111,9 @@ echo '最高価格は'.$maxPrice.'円です';
 // 連想配列の値を取り出すには、配列名[キー] 
 echo $menu['name'].'は'.$menu['price'].'円です';
 
+foreach ($menus as $menu) {
+  echo $menu['name'].'は'.$menu['price'].'円です';
+  echo '<br>';
+}
+
 ?>
