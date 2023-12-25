@@ -32,4 +32,13 @@ echo '<br>';
 // $pastaのnameプロパティをechoしてください
 echo $pasta->name;
 
+
+// helloメソッドを定義してください
+public function hello() {
+  echo '私はMenuクラスのインスタンスです';
+}
+
+// $curryに対してhelloメソッドを呼び出してください
+$curry -> hello();
+
 ?>
